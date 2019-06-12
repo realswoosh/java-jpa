@@ -1,4 +1,4 @@
-package jpa1.reserve.model;
+package common.model;
 
 import java.util.Date;
 
@@ -20,6 +20,9 @@ public class User {
     @Column(name = "create_date")
     private Date createDate;
 
+    public User() {
+
+    }
     public User(String email, String name, Date createDate) {
         this.email = email;
         this.name = name;
@@ -36,5 +39,9 @@ public class User {
 
     public Date getCreateDate() {
         return createDate;
+    }
+
+    public void changeNames(String newName) {
+        this.name = newName;
     }
 }

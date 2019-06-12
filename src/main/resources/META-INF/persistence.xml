@@ -6,7 +6,9 @@
              version="2.1">
 
   <persistence-unit name="jpastart" transaction-type="RESOURCE_LOCAL">
-    <class>jpa1.reserve.model.User</class>
+    <class>common.model.User</class>
+    <class>common.model.Hotel</class>
+    <class>common.model.Sight</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
