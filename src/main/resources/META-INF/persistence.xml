@@ -9,7 +9,8 @@
     <class>common.model.User</class>
     <class>common.model.Hotel</class>
     <class>common.model.Sight</class>
-    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <class>common.model.MembershipCard</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/jpastart?useSSL=false&amp;requireSSL=false&amp;chracterEncoding=utf8" />
@@ -25,4 +26,5 @@
       <property name="hibernate.c3p0.idle_test_period" value="2000" />
     </properties>
   </persistence-unit>
+
 </persistence>

@@ -44,4 +44,13 @@ public class User {
     public void changeNames(String newName) {
         this.name = newName;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+               "email='" + email + '\'' +
+               ", name='" + name + '\'' +
+               ", createDate=" + createDate +
+               '}';
+    }
 }
